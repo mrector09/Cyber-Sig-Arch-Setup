@@ -68,7 +68,7 @@ ai_fix() {
 
 ### ✅ Step 1: Self-Updating (If GitHub Repo is Set)
 log "\e[32mChecking for Script Updates...\e[0m"
-REPO_URL=""
+REPO_URL="https://github.com/mrector09/Cyber-Sig-Arch-Setup.git"
 if [ ! -z "$REPO_URL" ]; then
     git clone "$REPO_URL" ~/reset_script_update
     cp ~/reset_script_update/reset.sh "$SCRIPT_PATH"
